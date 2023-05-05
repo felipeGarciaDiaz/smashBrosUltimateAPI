@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 
 def main():
-    for SITE_RANGE in range(281177, 281252):
+    for SITE_RANGE in range(281177, 281253):
         URL = "https://game8.co/games/SSBU/archives/" + str(SITE_RANGE)
         SITE = urlopen(URL)
         HTML = BeautifulSoup(SITE.read().decode('utf-8'), 'html.parser')
